@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <div id="welcomePage">
+        <h1>Welcome Angela Mae Marzo</h1>
+        <p>Click the button below to proceed.</p>
+        <button onclick="showDecisionPage()">Go to Next Page</button>
+    </div>
+
+    <div id="decisionPage" class="hidden">
+        <h1>Choose an Option</h1>
+        <button id="yesButton" onclick="handleClick('yes')">YES</button>
+        <button id="noButton" onclick="handleClick('no')">NO</button>
+        <div id="message">Make your choice!</div>
+        <footer>
+            <p style="margin-top: 50px; font-size: 0.9rem; color: #555;">BE HONEST</p>
+        </footer>
+    </div>
+
+
+    <img id="sadImage" src="https://via.placeholder.com/150/ff6347/ffffff?text=Sad" alt="Sad Image">
+
+</body>
+</html>
